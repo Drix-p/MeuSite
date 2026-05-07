@@ -1,0 +1,162 @@
+:root {
+    --bg-color: #0f0f0f;
+    --card-bg: #1a1a1a;
+    --accent: #ff4d00; /* Cor vibrante de artista */
+    --text-main: #ffffff;
+    --text-dim: #a0a0a0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.main-card {
+    background: var(--card-bg);
+    width: 100%;
+    max-width: 450px;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    padding: 30px;
+}
+
+.status-bar {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.dot {
+    height: 6px;
+    width: 6px;
+    background-color: var(--accent);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.profile-frame {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.artist-photo {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(45deg, #333, #555);
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+}
+
+.artist-header h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    text-align: center;
+    font-style: italic;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+.post-nav {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 15px 0;
+    margin-bottom: 25px;
+}
+
+.post-nav a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content-section h3 {
+    font-size: 1rem;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.content-section p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #e0e0e0;
+    margin-bottom: 25px;
+}
+
+.art-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.art-item {
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    color: #000;
+}
+
+.cta-button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    background: var(--accent);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.cta-button:hover {
+    transform: scale(1.02);
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: var(--text-dim);
+}
+.artist-photo {
+  width: 150px;         /* Ajuste o tamanho que desejar */
+  height: 150px;
+  border: 2px solid #ff7300; /* Essa borda laranja que aparece na sua foto */
+  border-radius: 50%;   /* Faz o container ser um círculo */
+  overflow: hidden;     /* TUDO que sair do círculo será escondido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfil-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
